@@ -2,6 +2,9 @@
 
 This repository contains a basic folder structure to be used during the Outreachy contribution period. Please make a fork to start contributing, and detail progress in the open issue. 
 
+## Installation
+- `
+
 ## Project goals:
 - Understand how to use and interact with the Ersilia Model Hub
 - Demonstrate basic AI/ML knowledge
