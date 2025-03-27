@@ -18,7 +18,7 @@ This project aims to create a machine learning model that can classify drug-drug
 - I carried out basic Exploratory Data Analysis to have a better understanding of my dataset
       - The Dataset has 4
 - I featurised the model using the *Morgan Fingerprints in binary form* `eos4wt0` from Ersilia Hub
-  ` The Morgan fingerprints 
+  `
 - 
 
   
