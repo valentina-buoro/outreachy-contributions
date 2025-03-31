@@ -6,5 +6,6 @@ def install(package):
 install('PyTDC')
 install('tiledbsoma')
 install('ersilia')
+install('xgboost')
 
 

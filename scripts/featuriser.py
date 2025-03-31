@@ -72,22 +72,16 @@ def featuriser(model_id):
         df_final.to_csv(output_file, index=False)
         print(f"Featurized data saved to {output_file}")
 
+        for temp_file in [drug1_input, drug1_output, drug2_input, drug2_output]:
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+                print(f"Deleted temporary file: {temp_file}")
+
         
-    delete_temp_files()
+
 
     # Stop the Ersilia server
     print("Ersilia server stopped.")
-
-def delete_temp_files():
-    temp_files = glob.glob("../data/*_drug1.csv") + glob.glob("../data/*_drug1_feat.csv") + \
-                 glob.glob("../data/*_drug2.csv") + glob.glob("../data/*_drug2_feat.csv")
-    
-    for file in temp_files:
-        try:
-            os.remove(file)
-            print(f"Deleted: {file}")
-        except Exception as e:
-            print(f"Error deleting {file}: {e}")
 
 
 
