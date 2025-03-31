@@ -1,3 +1,7 @@
+#featurised dataset
+data/featurised_train.csv
+data/featurised_test.csv
+data/featurised_valid.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

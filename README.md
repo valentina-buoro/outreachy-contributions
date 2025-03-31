@@ -10,9 +10,9 @@ This project aims to create a machine learning model that can classify the inter
 - Clone the repository `https://github.com/valentina-buoro/outreachy-contributions.git`
 - Open Jupyter notebook and `cd` into the `/notebook` folder
 - Open the `drug_drug_interactions.ipynb` file
-- The notebook is divided into four(4) parts, namely `Installation, Loading Dataset From TDC package, Exploratory Data Analysis, Featurisation`
 - uncomment the first cell in the notebook and run using `shift + enter`. This runs a python script that installs the required packages.
   N.B. if along the line, you experience an error that says `ModuleNotFoundError: No module named 'module_name'`, just run `pip install module_name`
+- The notebook is divided into four(4) parts, namely `Installation, Loading Dataset From TDC package, Exploratory Data Analysis, Featurisation`
 - run the cells in the notebook sequentially
 
 
@@ -37,7 +37,7 @@ I implemented the use of git large file storage, but found difficulty pushing th
 Upon further research, I discovered that git large file storage does not support the implemetation of forks as mentioned [here](https://github.com/homuler/MediaPipeUnityPlugin/issues/475) because it counts towards the original repo owner's quota.-~(Neleac)~
 
 ## Solution
-Featurisation of the data is reproducible, with `%run '../scripts/featuriser.py'`, I refrained from uploading thr featurised dataset to github
+Featurisation of the data is reproducible, with `%run '../scripts/featuriser.py'`, I refrained from uploading the featurised dataset to github
 
   
 
