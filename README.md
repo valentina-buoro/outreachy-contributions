@@ -19,6 +19,7 @@ This project aims to create a machine learning model that can classify the inter
 ## Development Workflow:
 - Pre-requisites for development were sucessfully installed
 - I explored the TDC dataset catalogue and selected a dataset for classification modelling
+- Although this dataset was fairly large, I choose it because I wanted to prevent overfitting the data by providing sufficient amount of training data to learn with
 - I wrote a python script that downloads the dataset and saves to the `/data` folder
 - The data was split into `train, valid and test` for training the machine learning model, carrying out cross validation of the model, and finally testing the model on new data.
 - I carried out basic Exploratory Data Analysis to have a better understanding of my dataset
