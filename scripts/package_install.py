@@ -7,5 +7,6 @@ install('PyTDC')
 install('tiledbsoma')
 install('ersilia')
 install('xgboost')
+install('joblib')
 
 
