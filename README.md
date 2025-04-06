@@ -1,5 +1,8 @@
 # Drug-Drug Interaction Using XGBoost
-Drug-drug interactions 
+Drug-drug interactions are interactions that occur when two or more drugs are taken together. In these interaction, one drug alters the effect of another, and these may potentially lead to decreased effectiveness, increased side effects, or unexpected reactions. 
+
+Acording to [TDC](https://tdcommons.ai/multi_pred_tasks/ddi) analyis of patient records showed that drug-drug interactions were the cause of admission for prolonged hospital stays in 7% of the cases. Estimating drug drug interaction during the early phase of drug development essentially helps the screening process by the rejection of drugs that have the risk of potential drug–drug interaction. 
+
 This project aims to create a machine learning model that can classify the interactions of two drugs, given their `SMILES` input
 
 ## Pre-requisites
@@ -30,11 +33,13 @@ This project aims to create a machine learning model that can classify the inter
 - I featurised the model using the *Morgan Fingerprints in binary form* `eos4wt0` from Ersilia Hub
   ` Morgan fingerprints are a popular type molecular fingerprint used in cheminformatics. It represent the substructures within a molecule, capturing information about the connectivity and nature of atoms within a specified radius. The Ersilia model hub provides an implementation that provides a binary output, and I chose to use it because its output is suitable for the nature of model (XGBoost) that I plan on implementing. Although featurisation of my data would increase the size of the dataset, I confirmed that I had enough computational capacity to contain the featurised dataset.`
 - To reproduce the featurisation process, I wrote a script that featurises the original dataset and returns only the featurised dataset into the `/data` folder at the end of the process.
+- I proceeded to create the model using XGBoost classifier
+- After model creation, I trained my model with the featurised test dataset, then I proceeded to make predictions using the featurised validation dataset, and the featurised test dataset and carried out performance evaluation for all the three(3) datasets.
+- I proceeded to save my model for use in a web application.
 
 
 ## Model Selection
-
-  
+The model of choice for this project is the XGBoost algorithm. The choice of this model depended on many factors. XGBoost works efficiently with large datasets, such as was used for this project  
   
 ## Issues faced
 1) The featurised datasets could not be uploaded to github because of size constraints
@@ -47,8 +52,11 @@ Upon further research, I discovered that git large file storage does not support
 
 ## Solution to issues
 1) Featurisation of the data is reproducible, with `%run '../scripts/featuriser.py'`, I refrained from uploading the featurised dataset to github
-2) I adjusted the y_train to start from 0 using the min value of the target `Y` 
+2) I adjusted the y_train to start from 0 using the min value of the target `Y`
 
-  
+
+## Web application
+- The backend for the website was built using the Python flask framework, and hosted on Render. Code for the backend api can be viewed [here](https://github.com/valentina-buoro/Drug-Interaction-Backend)
+- The frontend was built using React framework, and hosted on netlify. [Live link to the website](https://drug-drug-interaction.netlify.app/) .The frontend code can be viewed [here](https://github.com/valentina-buoro/Drug-Interaction-Frontend)
 
 

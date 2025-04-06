@@ -27,7 +27,7 @@ def featuriser(model_id):
         # Load dataset
         df = pd.read_csv(input_file)
         print(f"Featurizing Drug1 from {input_file}...")
-        df_drug1 = df[['Drug1']].rename(columns={'Drug1': 'SMILES'})  # Rename column to "SMILES" for Ersilia
+        df_drug1 = df[['Drug1']].rename(columns={'Drug1': 'SMILES'}) 
         drug1_input = input_file.replace(".csv", "_drug1.csv")
         drug1_output = input_file.replace(".csv", "_drug1_feat.csv")
         df_drug1.to_csv(drug1_input, index=False)
