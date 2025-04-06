@@ -7,6 +7,7 @@ This project aims to create a machine learning model that can classify the inter
 
 ## Pre-requisites
 - Jupyter Notebook
+- Python
 
 
 ## Installation/Steps to run project locally
@@ -56,6 +57,10 @@ Upon further research, I discovered that git large file storage does not support
 
 
 ## Web application
+The primary objective of any machine learning project is not solely to develop a performant model, but to ensure its utility in real-world applications. It is estimated that approximately 87% of data science models never make it into production environments. To address this gap, I developed a web application for my model that enables users to input two drug molecules in SMILES format and obtain a prediction of their potential interaction type.
+
+The predictive model is based on an XGBoost classifier trained using binary Morgan fingerprints generated via the Ersilia platform. The app serves as a user-friendly interface to demonstrate how cheminformatics and machine learning can be integrated into accessible tools for drug interaction screening. This work illustrates a practical approach toward the translational deployment of AI in drug discovery and research.
+
 - The backend for the website was built using the Python flask framework, and hosted on Render. Code for the backend api can be viewed [here](https://github.com/valentina-buoro/Drug-Interaction-Backend)
 - The frontend was built using React framework, and hosted on netlify. [Live link to the website](https://drug-drug-interaction.netlify.app/) .The frontend code can be viewed [here](https://github.com/valentina-buoro/Drug-Interaction-Frontend)
 
