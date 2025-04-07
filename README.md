@@ -1,6 +1,10 @@
 
 
-https://github.com/user-attachments/assets/8b1a4bf2-bdbf-47c5-8a32-8093d40d2a92
+
+
+https://github.com/user-attachments/assets/cc2523d0-c2a6-4e54-86ef-8ab562432584
+
+
 
 # Drug-Drug Interaction Using XGBoost
 Drug-drug interactions are interactions that occur when two or more drugs are taken together. In these interaction, one drug alters the effect of another, and these may potentially lead to decreased effectiveness, increased side effects, or unexpected reactions. 
