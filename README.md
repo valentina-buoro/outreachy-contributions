@@ -52,7 +52,7 @@ I implemented the use of git large file storage, but found difficulty pushing th
 Upon further research, I discovered that git large file storage does not support the implemetation of forks as mentioned [here](https://github.com/homuler/MediaPipeUnityPlugin/issues/475) because it counts towards the original repo owner's quota.-~(Neleac)~
 
 2) XGBoost expects class labels to start from 0 and be contiguous. Therefore I adjusted the y_train to start from 0. 
-#This will not affect the model's eventual output
+This will not affect the model's eventual output
 3) Backend deployment issues on render.
 
 
