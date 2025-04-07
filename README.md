@@ -57,7 +57,7 @@ Upon further research, I discovered that git large file storage does not support
 
 2) XGBoost expects class labels to start from 0 and be contiguous. Therefore I adjusted the y_train to start from 0. 
 This will not affect the model's eventual output
-3) Backend deployment issues on render.
+3) Backend server issues on render.
 
 
 ## Solution to issues
