@@ -53,11 +53,13 @@ Upon further research, I discovered that git large file storage does not support
 
 2) XGBoost expects class labels to start from 0 and be contiguous. Therefore I adjusted the y_train to start from 0. 
 #This will not affect the model's eventual output
+3) Backend deployment issues on render.
 
 
 ## Solution to issues
 1) Featurisation of the data is reproducible, with `%run '../scripts/featuriser.py'`, I refrained from uploading the featurised dataset to github
 2) I adjusted the y_train to start from 0 using the min value of the target `Y`
+3) The webapp is currently served and accessible locally. I recorded a demo of the web application in action and updated steps to run the code locally
 
 
 ## Web application
